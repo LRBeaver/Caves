@@ -50,7 +50,7 @@ class DisjointSet:
 		return sets
 
 	def dump(self):
-		print self.__items
+		print(self.__items)
 
 
 class CA_CaveFactory:
@@ -71,11 +71,11 @@ class CA_CaveFactory:
 		for r in range(0,self.__length):
 			for c in range(0,self.__width):
 				if self.__map[r][c] in (WALL,PERM_WALL):
-					print '#',
+					print('#',)
 				else:
-					print '.',
+					print('.',)
 
-			print
+			print()
 
 	def gen_map(self):
 		for r in range(1,self.__length-1):
